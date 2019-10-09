@@ -45,6 +45,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	void DrawRect();
+	virtual void OnInitialUpdate();
 };
 
 #ifndef _DEBUG  // M_IdleView.cpp의 디버그 버전

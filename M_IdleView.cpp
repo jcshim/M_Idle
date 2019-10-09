@@ -139,3 +139,11 @@ void CMIdleView::DrawRect()
 	p3 = rand() % 50;       // 사각형의 크기 제한
 	dc.Rectangle(p1 - p3, p2 - p3, p1 + p3, p2 + p3);
 }
+
+
+void CMIdleView::OnInitialUpdate()
+{
+	CView::OnInitialUpdate();
+	srand((unsigned)time(NULL));
+	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
+}
